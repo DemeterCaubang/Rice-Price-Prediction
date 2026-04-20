@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Rice Price Predictors</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="dropdown.css">
+</head>
+
+<body class="bg-[#B8E2B0]">
+
+<div class="flex items-center space-x-4 bg-[#228B22] w-full h-20 pl-6 pr-6 text-lg shadow-xl top-0">
+
+  <div class="text-white font-semibold mr-6">
+    Rice Price Predictors
+  </div>
+
+  <select class="bg-[#228B22] text-white" id="ToR">
+    <option selected value="defaultOne">Type of Rice</option>
+    <option value="i">Imported</option>
+    <option value="l">Local</option>
+  </select>
+
+  <select class="bg-[#228B22] text-white" id="VoR">
+    <option selected value="defaultTwo">Variety of Rice</option>
+    <option value="S">Special</option>
+    <option value="P">Premium</option>
+    <option value="W">Well-Milled</option>
+    <option value="R">Regular-Milled</option>
+  </select>
+	
+  <select class="bg-[#228B22] text-white" id="Predictor">
+    <option selected value="defaultThree">Predictor</option>
+    <option value="oil">Brent Crude Oil (USD)</option>
+    <option value="farm">Farmgate Value (PHP)</option>
+    <option value="rate">Inflation Rate</option>
+    <option value="exc">USD to PHP exchange rate</option>
+  </select>
+  
+  <button class="ml-auto bg-white text-green-800 px-4 py-1 rounded shadow hover:bg-gray-300" id="Search">
+    Search
+  </button>
+
+  <button class="ml-auto bg-red-500 text-white px-4 py-1 rounded shadow hover:bg-gray-100 hover:text-red-500" id="Clear">
+    Clear
+  </button>
+
+
+</div>
+
+<div class="flex flex-col items-center gap-10 w-full">
+
+  <iframe src="about:blank"
+          class="w-[95vw] h-[95vh] border rounded-lg shadow"
+          title="Imported Special" id="Graph"></iframe>
+</div>
+  <a href="landing_page.html">
+    <button class="bg-white text-green-800 text-semibold px-6 py-2 rounded-lg shadow-lg 
+                   hover:bg-[#B8E2B0] hover:text-black 
+                   hover:scale-105 transition duration-300">
+      ← Back to Home Page
+    </button>
+  </a>
+
+</div>
+
+<footer class="fixed bottom-0 left-0 w-full bg-gray-900 text-white text-center py-3 text-base font-semibold">
+  Rice Price Predictor • Thesis Project • 2026
+</footer>
+
+<script src="greetings.js"></script>
+<script src="searchgraph.js"></script>
+
+</body>
+
+</html>
+
+

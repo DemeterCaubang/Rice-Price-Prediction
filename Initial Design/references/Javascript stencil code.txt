@@ -1,0 +1,66 @@
+//Popup window to test if javascript file was linked to HTML file
+
+function sayHello() {
+  window.alert(Hello!);
+}
+
+sayHello();
+
+
+//Testing the button functionality
+document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("Search");
+
+    btn.addEventListener("click", function () {
+        window.alert("Button was clicked!");
+    });
+});
+
+//Changing the graphs based on the dropdown values
+
+
+//Testing the button functionality
+document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("Search");
+
+    btn.addEventListener("click", function () {
+        window.alert("Button was clicked!");
+    });
+});
+
+
+//Extracting dropdown values
+const dropdown = document.getElementById("mySelect");
+const selectedValue = dropdown.value;
+console.log(selectedValue);
+
+//Combining stencils (code worked)
+document.addEventListener("DOMContentLoaded", function () {
+
+    const TypeOfRice = document.getElementById("ToR");
+    const VarietyOfRice = document.getElementById("VoR");
+    const Predict = document.getElementById("Predictor");
+    const btn = document.getElementById("Search");
+
+    btn.addEventListener("click", function () {
+        const DropdownValue1 = TypeOfRice.value;
+	const DropdownValue2 = VarietyOfRice.value;
+	const DropdownValue3 = Predict.value;
+
+        window.alert(DropdownValue1 + "\n" + DropdownValue2 + "\n" + DropdownValue3);
+    });
+
+});
+
+//Trying to make the option selected text not a part of the analytics choices
+btn.addEventListener("click", function () {
+        const DropdownValue1 = TypeOfRice.value;
+	const DropdownValue2 = VarietyOfRice.value;
+	const DropdownValue3 = Predict.value;
+
+        if (DropdownValue1==='i' || DropdownValue2==='S' || DropdownValue3==='oil') {
+		document.getElementById('Graph').setAttribute('src', 'Visualizations/Time/imported_special_time_series_plot.html');
+	} else if (DropdownValue1==='Default1' && DropdownValue2==='Default2' && DropdownValue3==='Default3') {
+		window.alert("Please select a valid value");
+document.getElementById('Graph').setAttribute('src', 'about:blank');
+	}
