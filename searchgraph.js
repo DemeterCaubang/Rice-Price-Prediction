@@ -16,21 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const DropdownValue3 = Predict.value;
 
         if (
-            DropdownValue1 === 'i' &&
-            DropdownValue2 === 'S' &&
-            DropdownValue3 === 'oil'
+            DropdownValue1 === "i" &&
+            DropdownValue2 === "S" &&
+            DropdownValue3 === "oil"
         ) {
-            document.getElementById("Graph").src =
-                "Visualizations/Time/imported_special_time_series_plot.html";
-        } else {
-            window.alert("Please select a valid value");
-            document.getElementById("Graph").src = "about:blank";
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Oil/imported_special_oil_plot.html');
         }
     });
 
     // CLEAR BUTTON
     ClearButton.addEventListener("click", function () {
-        document.getElementById("Graph").src = "about:blank";
+        document.getElementById("Graph").setAttribute('src','Visualizations/default_graph.html');
     });
 
 });

@@ -1,19 +1,25 @@
-//Popup window to test if javascript file was linked to HTML file
-
 function sayHello() {
+    const now = new Date();
+    const hours = now.getHours();
 
-  var Digital=new Date()
-  var hours=Digital.getHours()
+    let message = "";
 
-if (hours>=1&&hours<=11)
-//GREETING MESSAGE FOR MORNING
-				window.alert("Good Morning! Welcome");
-			else if (hours>=12&&hours<=17)
-				//GREETING MESSAGE FOR AFTERNOON
-				window.alert("Good Afternoon! Welcome");
-			else 
-				//GREETING MESSAGE FOR EVENING
-				window.alert("Good Evening! Welcome");
+    if (hours >= 1 && hours <= 11) {
+        message = "Good Morning! Welcome";
+    }
+    else if (hours >= 12 && hours <= 17) {
+        message = "Good Afternoon! Welcome";
+    }
+    else {
+        message = "Good Evening! Welcome";
+    }
+
+    document.getElementById("greetingMessage").textContent = message;
+    document.getElementById("welcomePopup").classList.remove("hidden");
 }
 
-sayHello();
+function closePopup() {
+    document.getElementById("welcomePopup").classList.add("hidden");
+}
+
+window.onload = sayHello;

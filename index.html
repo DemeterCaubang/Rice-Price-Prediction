@@ -2,46 +2,59 @@
 <html>
 
 <head>
-	<title>Welcome Page</title>
-	<script src="https://cdn.tailwindcss.com"></script>
+  <title>Welcome Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
-<div class="flex flex-col items-center justify-center min-h-screen gap-6 bg-[#228B22] text-3xl">
+  <div id="welcomePopup" class="fixed inset-0 flex items-center justify-center bg-black/50 z-50 hidden">
 
-  <div class="text-white font-semibold justify-center text-center p-6">
-    Welcome to my page! What would you like to do today?
+    <div class="bg-white rounded-xl shadow-xl p-8 text-center max-w-md w-[90%]">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">Welcome</h2>
+
+      <p id="greetingMessage" class="text-lg text-gray-700 mb-6"></p>
+
+      <button onclick="closePopup()" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
+        Continue
+      </button>
+    </div>
   </div>
 
-  <a href="iframes.html">
-  <button class="bg-white text-green-800 px-4 py-1 rounded shadow hover:bg-[#B8E2B0] hover:text-black">
-    Predict Price Using Time Series
-  </button>
-  </a>
-  
-  <a href="analytics_dropdown.html">
-  <button class="bg-white text-green-800 px-4 py-1 rounded shadow hover:bg-[#B8E2B0] hover:text-black">
-    See Other Rice Price Predictors
-  </button>
-  </a>
+  <div class="flex flex-col items-center justify-center min-h-screen gap-6 bg-[#228B22] text-3xl">
 
-  <a href="iframe.html">
-  <button class="bg-white text-green-800 px-4 py-1 rounded shadow hover:bg-[#B8E2B0] hover:text-black">
-    Optimized Rice Price Prediction Model
-  </button>
-  </a>
+    <div class="text-white font-semibold justify-center text-center p-6">
+      Welcome to my page! What would you like to do today?
+    </div>
 
-</div>
+    <a href="iframes.html">
+      <button class="bg-white text-green-800 px-4 py-1 rounded shadow hover:bg-[#B8E2B0] hover:text-black">
+        Predict Price Using Time Series
+      </button>
+    </a>
 
-<footer class="fixed bottom-0 left-0 w-full bg-gray-900 text-white text-center py-3 text-base font-semibold">
+    <a href="analytics_dropdown.html">
+      <button class="bg-white text-green-800 px-4 py-1 rounded shadow hover:bg-[#B8E2B0] hover:text-black">
+        See Other Rice Price Predictors
+      </button>
+    </a>
 
-  Rice Price Predictor • Thesis Project • 2026
+    <a href="iframe.html">
+      <button class="bg-white text-green-800 px-4 py-1 rounded shadow hover:bg-[#B8E2B0] hover:text-black">
+        Optimized Rice Price Prediction Model
+      </button>
+    </a>
 
-</footer>
+  </div>
 
+  <footer class="fixed bottom-0 left-0 w-full bg-gray-900 text-white text-center py-3 text-base font-semibold">
+
+    Rice Price Predictor • Thesis Project • 2026
+
+  </footer>
+
+  <script src="greetings.js"></script>
+  <script src="loader.js"></script>
 </body>
 
 </html>
-
-
