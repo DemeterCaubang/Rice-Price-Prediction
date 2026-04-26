@@ -1,0 +1,94 @@
+
+       else if ( //Local Oil
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "S" &&
+            DropdownValue3 === "oil"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Oil/Local_special_oil_plot.html');
+        } else if (
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "P" &&
+            DropdownValue3 === "oil"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Oil/Local_premium_oil_plot.html');
+        } else if (
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "W" &&
+            DropdownValue3 === "oil"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Oil/Local_well-milled_oil_plot.html');
+        } else if (
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "R" &&
+            DropdownValue3 === "oil"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Oil/Local_regular-milled_oil_plot.html');
+        } else if ( // //Local Farmgate
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "S" &&
+            DropdownValue3 === "farm"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Farmgate/Local_special_farmgate_plot.html');
+        } else if (
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "P" &&
+            DropdownValue3 === "farm"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Farmgate/Local_premium_farmgate_plot.html');
+        } else if (
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "W" &&
+            DropdownValue3 === "farm"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Farmgate/Local_well-milled_farmgate_plot.html');
+        } else if (
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "R" &&
+            DropdownValue3 === "farm"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Farmgate/Local_regular-milled_farmgate_plot.html');
+        } else if ( //Local Inflation
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "S" &&
+            DropdownValue3 === "rate"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Inflation/Local_special_inflation_plot.html');
+        } else if (
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "P" &&
+            DropdownValue3 === "rate"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Inflation/Local_premium_inflation_plot.html');
+        } else if (
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "W" &&
+            DropdownValue3 === "rate"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Inflation/Local_well-milled_inflation_plot.html');
+        } else if (
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "R" &&
+            DropdownValue3 === "rate"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Inflation/Local_regular-milled_inflation_plot.html');
+        } else if ( //Local Inflation
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "S" &&
+            DropdownValue3 === "exc"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Exchange/Local_special_usd_plot.html');
+        } else if (
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "P" &&
+            DropdownValue3 === "exc"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Exchange/Local_premium_usd_plot.html');
+        } else if ( //Local Exchange
+            DropdownValue1 === "l" &&
+            DropdownValue2 === "W" &&
+            DropdownValue3 === "exc"
+        ) {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Exchange/Local_well-milled_usd_plot.html');
+        } else {
+            document.getElementById("Graph").setAttribute('src', 'Visualizations/Exchange/Local_regular-milled_usd_plot.html');
+        }
