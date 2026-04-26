@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Default page </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <div id="loader" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+        <div class="h-16 w-16 animate-spin rounded-full border-4 border-solid border-green-600 border-t-transparent">
+        </div>
+    </div>
+    
+<script>
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+
+    loader.style.opacity = "0";
+    loader.style.transition = "opacity 0.5s ease";
+
+    setTimeout(() => {
+        loader.style.display = "none";
+    }, 500);
+});
+</script>
+</body>
+
+</html>
